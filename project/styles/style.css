@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: var(--ff-secondary);
 }
 
 a {
@@ -11,6 +12,10 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+fieldset {
+	border: none;
 }
 
 .header {
@@ -58,4 +63,28 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#background {
+	height: 100vh;
+	width: 100%vw;
+	background: var(--primary-bg);
+	opacity: .5;
+	position: absolute;
+	z-index: 1;
+}
+
+#modal {
+	position: absolute;
+	z-index: 2;
+	width: 50%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--secondary-bg);
+	padding: var(--padding-xl);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
