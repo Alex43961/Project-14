@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./styles/style.css" />
 	<link rel="stylesheet" href="./styles/variables.css">
 	<link rel="shortcut icon" href="./public/icons/favicon.png" type="image/png">
+	<script src="./scripts/app.js" defer></script>
 	<title>New Project</title>
 </head>
 
@@ -22,16 +23,16 @@
 				<label class="modal-form__label" for="email">Email</label>
 				<input class="modal-form__input" type="email" placeholder="E-mail" type="text" />
 			</fieldset>
-			<fieldset class="modal-form__input">
+			<fieldset class="modal-form__input-wrapper">
 				<label for="passvord">Password</label>
 				<input class="modal-form__input" type="password" placeholder="Password" />
 			</fieldset>
 			<div class="checkbox">
-				<p><input type="checkbox" name="c2" checked="checked" />Remember me</p>
+				<p><input type="checkbox" name="c2"/>Remember me</p>
 			</div>
 
 			<div class="button-wrapper">
-				<button class="button">Close hucking advert</button>
+				<button class="button">Log in</button>
 			</div>
 		</form>
 	</div>
@@ -48,7 +49,7 @@
 				<input class="button-search" type="submit" value="Search">
 			</div>
 			<nav class="nav">
-				<a href="./pages/login.html">
+				<a href="#" id="nav-link">
 					Register/Login
 				</a>
 			</nav>
